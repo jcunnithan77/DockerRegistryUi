@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  dockerregistry:
+    image: registry.sriviz.com/dockerregistry:latest
+    container_name: dockerregistry-ui
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    networks:
+      - registry-net
+
+networks:
+  registry-net:
+    external: true
+    name: registry-net
