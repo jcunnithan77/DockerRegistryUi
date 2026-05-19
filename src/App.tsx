@@ -11,10 +11,8 @@ import {
   Layers,
   ChevronRight,
   Key,
-  Settings,
   X,
-  Info,
-  CheckCircle
+  Info
 } from 'lucide-react';
 
 interface RegistryResponse {
