@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   dockerregistry:
-    image: registry.sriviz.com/dockerregistry:latest
+    image: localhost:5000/dockerregistry:latest
     container_name: dockerregistry-ui
     restart: unless-stopped
     ports:
